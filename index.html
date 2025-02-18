@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C.E. Chat GPT </title>
+    <title>C.E. Chat GPT</title>
     <link rel="shortcut icon" href="imagenes/Logo-Circular.ico">
     <style>
         body {
@@ -15,14 +15,14 @@
             padding: 20px;
         }
         .container {
-            max-width: auto;
+            max-width: 1200px;
             margin: auto;
             background: #FFFFFF;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
+        h1, h2, h3 {
             color: #004AAD;
         }
         .link {
@@ -36,7 +36,6 @@
             gap: 20px;
             text-align: left;
             align-items: center;
-            
         }
         .link:hover {
             background: #FFD700;
@@ -44,7 +43,7 @@
         }
         .social-icons img {
             width: 60px;
-            margin: 30px;
+            margin: 15px;
         }
         .contact-btn {
             display: flex;
@@ -63,47 +62,87 @@
             color: white;
         }
 
-        .contacto{
+        .contacto {
             width: 50px;
             height: 50px;
         }
 
-        .columns{
+        .columns {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
         }
-        
+        .columns div {
+            flex: 1 1 45%; /* Hace que cada columna ocupe un 45% del ancho */
+            margin: 10px;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .link {
+                flex-direction: flex;
+                text-align: center;
+            }
+            .columns div {
+                flex: 1 1 100%;
+                margin: 5px 0;
+            }
+
+            .columns{
+                margin-right: 90px;
+                margin-left: 90px;
+            }
+
+
+            .social-icons img {
+                width: 50px;
+            }
+
+            .social-icons img {
+                width: 40px;
+            }
+
+            .contact-btn {
+                align-items: center;
+                margin-right: 90px;
+                margin-left: 90px;
+            }
+            
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="imagenes/Logo Horizontal.png" alt="Logo" style="width: 250px;">
+        <img src="imagenes/Logo Horizontal.png" alt="Logo" style="width: 250px; margin-bottom: 20px;">
         <p style="padding-right: 100px; padding-left: 100px">Bienvenido a la página de contacto del Centro de Estudiantes CHAT GPT. Aquí puedes comunicarte directamente con los miembros del equipo para cualquier consulta o duda que tengas.</p>
         <h1>Enlaces de WhatsApp</h1>
         <div class="columns"> 
             <div> 
-                <a class="link" class="link" href="https://chat.whatsapp.com/HVE5TgbhdgZ4cyw6nuZ0HJ"><img src="imagenes/sis.png" alt="logo" class="contacto"> <h3>Informaciones Sistemas</h3></a>
-                <a class="link" class="link" href="https://chat.whatsapp.com/Izzxa1DGyFKC20Pv8wG8Qj"><img src="imagenes/dad.png" alt="logo" class="contacto"> <h3>Informaciones Diseño y Animación Digital</h3></a>
-                <a class="link" class="link" href="https://chat.whatsapp.com/EWRRmXM9sgY7d1QjcKec8n"><img src="imagenes/tel.png" alt="logo" class="contacto"> <h3>Informaciones Telecomunicaciones</h3></a>
-                <a class="link" class="link" href="https://chat.whatsapp.com/IzQ1D2beVWBIfghQKOaSdM"><img src="imagenes/tis.png" alt="logo" class="contacto"> <h3>Informaciones Tecnologias de la Informacion y Seguridad</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/HVE5TgbhdgZ4cyw6nuZ0HJ"><img src="imagenes/sis.png" alt="logo" class="contacto"> <h3>Informaciones Sistemas</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/Izzxa1DGyFKC20Pv8wG8Qj"><img src="imagenes/dad.png" alt="logo" class="contacto"> <h3>Informaciones Diseño y Animación Digital</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/EWRRmXM9sgY7d1QjcKec8n"><img src="imagenes/tel.png" alt="logo" class="contacto"> <h3>Informaciones Telecomunicaciones</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/IzQ1D2beVWBIfghQKOaSdM"><img src="imagenes/tis.png" alt="logo" class="contacto"> <h3>Informaciones Tecnologias de la Informacion y Seguridad</h3></a>
             </div>
-            <div>
-                <a class="link" class="link" href="https://chat.whatsapp.com/Kb0zlKFseBTHgLqfxS9xjo"><img src="imagenes/cic.png" alt="logo" class="contacto"> <h3>Informaciones Ciencias de la Computación</h3></a>
-                <a class="link" class="link" href="https://chat.whatsapp.com/IqXPsIHvFmAAAmPMa7QWIB"><img src="imagenes/1.png" alt="logo" class="contacto"> <h3>C.E. CHAT GPT</h3></a>
-                <a class="link" class="link" href="https://chat.whatsapp.com/KyYCGDZ72991M6hlHJHgrg"><img src="imagenes/2.png" alt="logo" class="contacto"> <h3>C.E. CHAT GPT PLUS</h3></a>
-                <a class="link" class="link" href="https://chat.whatsapp.com/BfKYex2pOqgEPGGhznrDUX"><img src="imagenes/3.png" alt="logo" class="contacto"> <h3>C.E. CHAT GPT 4o (Nuevos 1/25)</h3></a>
+            <div class="colums2">
+                <a class="link" href="https://chat.whatsapp.com/Kb0zlKFseBTHgLqfxS9xjo"><img src="imagenes/cic.png" alt="logo" class="contacto"> <h3>Informaciones Ciencias de la Computación</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/IqXPsIHvFmAAAmPMa7QWIB"><img src="imagenes/1.png" alt="logo" class="contacto"> <h3>C.E. CHAT GPT</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/KyYCGDZ72991M6hlHJHgrg"><img src="imagenes/2.png" alt="logo" class="contacto"> <h3>C.E. CHAT GPT PLUS</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/BfKYex2pOqgEPGGhznrDUX"><img src="imagenes/3.png" alt="logo" class="contacto"> <h3>C.E. CHAT GPT 4o (Nuevos 1/25)</h3></a>
             </div>
         </div>
-        
-       
-        
+
         <div class="social-icons">
             <h2>Síguenos en redes sociales</h2>
             <a href="https://www.facebook.com/profile.php?id=100094430410757&locale=es_LA"><img src="imagenes/facebook.png" alt="Facebook"></a>
             <a href="https://www.tiktok.com/@ce_chat_gpt_usfx"><img src="imagenes/tik-tok.png" alt="TikTok"></a>
         </div>
-        
+
         <a class="contact-btn" href="contactos.html"><img src="imagenes/social.png" alt="Facebook" style="width: 50px; height: 50px;"> <h3>Contactar a Integrantes</h3></a>
     </div>
 </body>
 </html>
+

@@ -15,21 +15,24 @@
             padding: 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 100%;
             margin: auto;
             background: #FFFFFF;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
         }
         h1 {
             color: #004AAD;
+            font-size: 2rem;
+            margin-bottom: 20px;
         }
         .contacts {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
+            gap: 20px;
         }
         .contact {
             display: flex;
@@ -41,6 +44,7 @@
             border-radius: 10px;
             text-decoration: none;
             width: 150px;
+            transition: background-color 0.3s, color 0.3s;
         }
         .contact:hover {
             background: #FFD700;
@@ -53,58 +57,98 @@
             margin-bottom: 10px;
         }
         .contact-info {
-            text-align: center;
-            font-size: 14px;
+            font-size: 16px;
         }
 
-        .encabezado{
+        .encabezado {
             display: flex;
-            justify-content: right;
-            margin-right: 25px;
-            gap: 10px
-            
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 20px;
         }
 
-        .encabezado a{
+        .encabezado a {
             text-decoration: none;
             color: blue;
+            font-size: 1.2rem;
         }
 
-        .encabezado img{
-            margin-top: 15px;
+        .encabezado img {
+            margin-top: 10px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .contacts {
+                gap: 10px;
+                justify-content: space-around;
+            }
+            .contact {
+                width: 120px;
+                padding: 8px;
+            }
+            .contact img {
+                width: 70px;
+                height: 70px;
+            }
+            .contact-info {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contacts {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact {
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 12px;
+            }
+            .contact img {
+                width: 60px;
+                height: 60px;
+            }
+            .contact-info {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div >
-            <div class="encabezado">
-                <img src="imagenes/flecha-izquierda.png" alt="atras" style="width: 25px; height: 25px;">
-                <a href="index.html"><h3>Volver</h3></a>
-            </div>
+        <div class="encabezado">
+            <img src="imagenes/flecha-izquierda.png" alt="atras" style="width: 25px; height: 25px;">
+            <a href="index.html"><h3>Volver</h3></a>
         </div>
         <img src="imagenes/Logo Horizontal.png" alt="Logo" style="width: 250px;">
-        
         <h1>Contactos de Integrantes</h1>
         <div class="contacts">
             <a class="contact" href="https://wa.me/59171154436">
-                <img src="imagenes/ckunno.jpg" alt="">
+                <img src="imagenes/ckunno.jpg" alt="Foto de Jhonny Ckunno">
                 <div class="contact-info">Jhonny Ckunno</div>
             </a>
             <a class="contact" href="https://wa.me/59168427194">
-                <img src="imagenes/foto.png" alt="">
+                <img src="imagenes/foto.png" alt="Foto de Joel Salinas">
                 <div class="contact-info">Joel Salinas</div>
             </a>
             <a class="contact" href="https://wa.me/591679222856">
-                <img src="imagenes/foto.png" alt="">
+                <img src="imagenes/foto.png" alt="Foto de Rayner Caba">
                 <div class="contact-info">Rayner Caba</div>
             </a>
             <a class="contact" href="https://wa.me/59167922809">
-                <img src="imagenes/foto.png" alt="">
+                <img src="imagenes/foto.png" alt="Foto de Luis Pastrana">
                 <div class="contact-info">Luis Pastrana</div>
             </a>
             <a class="contact" href="https://wa.me/59172368397">
-                <img src="imagenes/foto.png" alt="">
+                <img src="imagenes/foto.png" alt="Foto de Gerson Mamani">
                 <div class="contact-info">Gerson Mamani</div>
             </a>
         </div>

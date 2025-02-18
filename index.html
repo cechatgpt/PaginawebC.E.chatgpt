@@ -14,6 +14,18 @@
             margin: 0;
             padding: 20px;
         }
+
+        .logo{
+            width: 250px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .descripcion{
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
         .container {
             max-width: 1200px;
             margin: auto;
@@ -77,48 +89,112 @@
             margin: 10px;
         }
 
+        .footer {
+            background-color: #004AAD;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        .footer .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer .footer-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .footer .footer-content p {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        .footer .footer-content a {
+            color: #FFD700;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .footer .footer-content a:hover {
+            color: #FFFFFF;
+        }
+
         /* Responsividad */
-        @media (max-width: 768px) {
-            .container {
+        @media (max-width: 400px) {
+        body {
+            padding: 10px;
+        }
+
+        .logo {
+            width: 180px;
+        }
+
+        .descripcion {
+            font-size: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        .link{
+            display: flex;
+            gap:5px
+        }
+
+        .container {
+            padding: 10px;
+        }
+
+        .link {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .columns {
+            align-items: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .social-icons img {
+            width: 35px;
+            margin: 10px;
+        }
+
+        .contact-btn {
+            text-align: center;
+            margin: 10px auto;
+            padding: 8px;
+        }
+
+        .footer {
                 padding: 15px;
             }
-            .link {
-                flex-direction: flex;
-                text-align: center;
+            .footer .footer-content h2 {
+                font-size: 1.3rem;
             }
-            .columns div {
-                flex: 1 1 100%;
-                margin: 5px 0;
+            .footer .footer-content p {
+                font-size: 0.85rem;
             }
-
-            .columns{
-                margin-right: 90px;
-                margin-left: 90px;
-            }
-
-
-            .social-icons img {
-                width: 50px;
-            }
-
-            .social-icons img {
-                width: 40px;
-            }
-
-            .contact-btn {
-                align-items: center;
-                margin-right: 90px;
-                margin-left: 90px;
-            }
-            
-        }
+    }
 
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="imagenes/Logo Horizontal.png" alt="Logo" style="width: 250px; margin-bottom: 20px;">
-        <p style="padding-right: 100px; padding-left: 100px">Bienvenido a la página de contacto del Centro de Estudiantes CHAT GPT. Aquí puedes comunicarte directamente con los miembros del equipo para cualquier consulta o duda que tengas.</p>
+        <img src="imagenes/Logo Horizontal.png" alt="Logo"  class="logo">
+        <p class="descripcion" >Bienvenido a la página de contacto del Centro de Estudiantes CHAT GPT. Aquí puedes comunicarte directamente con los miembros del equipo para cualquier consulta o duda que tengas.</p>
         <h1>Enlaces de WhatsApp</h1>
         <div class="columns"> 
             <div> 
@@ -143,6 +219,19 @@
 
         <a class="contact-btn" href="contactos.html"><img src="imagenes/social.png" alt="Facebook" style="width: 50px; height: 50px;"> <h3>Contactar a Integrantes</h3></a>
     </div>
+    <div class="footer">
+        <div class="footer-content">
+            <h2 style="color:white">Centro de Estudiantes CHAT GPT</h2>
+            <p><strong>Dirección:</strong> Facultad de Ciencias y Tecnología, Universidad San Francisco Xavier de Chuquisaca</p>
+            <p><strong>Ambiente:</strong> F-105</p>
+            <p><strong>Horario de Atención:</strong> Lunes a Viernes</p>
+            Turno Mañana: 08:00 AM a 12:00 PM  |  Turno Tarde: 02:00 PM a 06:00 PM  
+            <p><strong>Correo Electrónico:</strong> <a href="centrodeestudianteschatgpt@gmail.com">centrodeestudianteschatgpt@gmail.com</a></p>
+            <p><strong>Celular:</strong> <a href="cel:+59171154436">+591 71154436</a></p>
+        </div>
+    </div>
+
 </body>
+
 </html>
 

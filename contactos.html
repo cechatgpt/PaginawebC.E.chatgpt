@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C.E. Chat GPT</title>
-    <link rel="shortcut icon" href="imagenes/Logo-Circular.ico" >
+    <link rel="shortcut icon" href="imagenes/Logo-Circular.ico">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,7 +32,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 10px;
         }
         .contact {
             display: flex;
@@ -57,7 +57,7 @@
             margin-bottom: 10px;
         }
         .contact-info {
-            font-size: 16px;
+            font-size: 1rem;
         }
 
         .encabezado {
@@ -77,20 +77,54 @@
             margin-top: 10px;
         }
 
-        /* Media Queries */
+        /* Footer Styles */
+        .footer {
+            background-color: #004AAD;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        .footer .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer .footer-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .footer .footer-content p {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        .footer .footer-content a {
+            color: #FFD700;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .footer .footer-content a:hover {
+            color: #FFFFFF;
+        }
+
+        .encabezado img{
+            width: 25px;
+            height: 25px;
+        }
+
+        /* Responsividad */
         @media (max-width: 768px) {
             .container {
-                padding: 10px;
+                padding: 15px;
             }
             h1 {
-                font-size: 1.5rem;
+                font-size: 1.7rem;
             }
             .contacts {
-                gap: 10px;
-                justify-content: space-around;
+                gap: 15px;
             }
             .contact {
-                width: 120px;
+                width: 130px;
                 padding: 8px;
             }
             .contact img {
@@ -98,26 +132,53 @@
                 height: 70px;
             }
             .contact-info {
-                font-size: 14px;
+                font-size: 0.9rem;
+            }
+            .footer .footer-content h2 {
+                font-size: 1.5rem;
+            }
+            .footer .footer-content p {
+                font-size: 0.9rem;
             }
         }
 
-        @media (max-width: 480px) {
-            .contacts {
-                flex-direction: column;
-                align-items: center;
+        /* Formato especial para 400px */
+        @media (max-width: 400px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.4rem;
             }
             .contact {
-                width: 100%;
+                width: 50%;
                 margin-bottom: 15px;
                 padding: 12px;
+                width: 60px;
             }
             .contact img {
-                width: 60px;
-                height: 60px;
+                width: 50px;
+                height: 50px;
             }
             .contact-info {
-                font-size: 14px;
+                font-size: 0.85rem;
+            }
+            .footer {
+                padding: 15px;
+            }
+            .footer .footer-content h2 {
+                font-size: 1.3rem;
+            }
+            .footer .footer-content p {
+                font-size: 0.85rem;
+            }  
+
+            .regresar{
+                width: 10px;
+            }
+
+            .Volver{
+                font-size:10px;
             }
         }
     </style>
@@ -125,8 +186,8 @@
 <body>
     <div class="container">
         <div class="encabezado">
-            <img src="imagenes/flecha-izquierda.png" alt="atras" style="width: 25px; height: 25px;">
-            <a href="index.html"><h3>Volver</h3></a>
+            <img class="regresar" src="imagenes/flecha-izquierda.png" alt="atras" >
+            <a href="index.html"><h3 class="Volver">Volver</h3></a>
         </div>
         <img src="imagenes/Logo Horizontal.png" alt="Logo" style="width: 250px;">
         <h1>Contactos de Integrantes</h1>
@@ -153,5 +214,18 @@
             </a>
         </div>
     </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <h2>Centro de Estudiantes CHAT GPT</h2>
+            <p><strong>Dirección:</strong> Facultad de Ciencias y Tecnología, Universidad San Francisco Xavier de Chuquisaca</p>
+            <p><strong>Ambiente:</strong> F-105</p>
+            <p><strong>Horario de Atención:</strong> Lunes a Viernes de 8:00 AM a 1:00 PM</p>
+            <p><strong>Correo Electrónico:</strong> <a href="mailto:chatgpt.ce@usfx.edu.bo">chatgpt.ce@usfx.edu.bo</a></p>
+            <p><strong>Teléfono:</strong> <a href="tel:+59167922809">+591 67922809</a></p>
+        </div>
+    </div>
+
 </body>
 </html>

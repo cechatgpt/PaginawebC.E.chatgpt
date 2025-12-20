@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enlaces de WhatsApp - C.E. Chat GPT</title>
+    <title>C.E. Chat GPT</title>
+    <link rel="shortcut icon" href="imagenes/Logo-Circular.ico">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,15 +14,27 @@
             margin: 0;
             padding: 20px;
         }
+
+        .logo{
+            width: 250px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .descripcion{
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
         .container {
-            max-width: auto;
+            max-width: 1400px;
             margin: auto;
             background: #FFFFFF;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
+        h1, h2, h3 {
             color: #004AAD;
         }
         .link {
@@ -35,7 +48,6 @@
             gap: 20px;
             text-align: left;
             align-items: center;
-            
         }
         .link:hover {
             background: #FFD700;
@@ -43,7 +55,7 @@
         }
         .social-icons img {
             width: 60px;
-            margin: 30px;
+            margin: 15px;
         }
         .contact-btn {
             display: flex;
@@ -62,47 +74,190 @@
             color: white;
         }
 
-        .contacto{
+        .contacto {
             width: 50px;
             height: 50px;
         }
 
-        .columns{
+        .columns {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
         }
+        .columns div {
+            flex: 1 1 45%; /* Hace que cada columna ocupe un 45% del ancho */
+            margin: 10px;
+        }
+
+        .footer {
+            background-color: #004AAD;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        .footer .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer .footer-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .footer .footer-content p {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        .footer .footer-content a {
+            color: #FFD700;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .footer .footer-content a:hover {
+            color: #FFFFFF;
+        }
+
+        #telegram{
+            text-align: center;
+            align-items: center;
+        }
         
+
+        /* Responsividad */
+        @media (max-width: 400px) {
+        body {
+            padding: 10px;
+        }
+
+        .logo {
+            width: 180px;
+        }
+
+        .descripcion {
+            font-size: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        .link{
+            display: flex;
+            gap:5px
+        }
+
+        .container {
+            padding: 10px;
+        }
+
+        .link {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .columns {
+            align-items: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .social-icons img {
+            width: 35px;
+            margin: 10px;
+        }
+
+        .contact-btn {
+            text-align: center;
+            margin: 10px auto;
+            padding: 8px;
+        }
+
+        .footer {
+                padding: 15px;
+            }
+            .footer .footer-content h2 {
+                font-size: 1.3rem;
+            }
+            .footer .footer-content p {
+                font-size: 0.85rem;
+        }
+        
+        
+
+    }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="imagenes/Logo Horizontal.png" alt="Logo" style="width: 250px;">
-        <p style="padding-right: 100px; padding-left: 100px">Bienvenido a la página de contacto del Centro de Estudiantes CHAT GPT. Aquí puedes comunicarte directamente con los miembros del equipo para cualquier consulta o duda que tengas.</p>
+        <img src="imagenes/Logo Horizontal.png" alt="Logo"  class="logo">
+        <p class="descripcion" >Bienvenido a la página de contacto del Centro de Estudiantes CHAT GPT. Aquí puedes comunicarte directamente con los miembros del equipo para cualquier consulta o duda que tengas.</p>
         <h1>Enlaces de WhatsApp</h1>
         <div class="columns"> 
             <div> 
-                <a class="link" class="link" href="https://chat.whatsapp.com/HVE5TgbhdgZ4cyw6nuZ0HJ"><img src="imagenes/sis.png" alt="logo" class="contacto"> <h3>Informaciones Sistemas</h3></a>
-                <a class="link" class="link" href="https://chat.whatsapp.com/Izzxa1DGyFKC20Pv8wG8Qj"><img src="imagenes/dad.png" alt="logo" class="contacto"> <h3>Informaciones Diseño y Animación Digital</h3></a>
-                <a class="link" class="link" href="https://chat.whatsapp.com/EWRRmXM9sgY7d1QjcKec8n"><img src="imagenes/tel.png" alt="logo" class="contacto"> <h3>Informaciones Telecomunicaciones</h3></a>
-                <a class="link" class="link" href="https://chat.whatsapp.com/IzQ1D2beVWBIfghQKOaSdM"><img src="imagenes/tis.png" alt="logo" class="contacto"> <h3>Informaciones Tecnologias de la Informacion y Seguridad</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/HVE5TgbhdgZ4cyw6nuZ0HJ"><img src="imagenes/sis.png" alt="logo" class="contacto"> <h3>Informaciones Sistemas</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/Izzxa1DGyFKC20Pv8wG8Qj"><img src="imagenes/dad.png" alt="logo" class="contacto"> <h3>Informaciones Diseño y Animación Digital</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/EWRRmXM9sgY7d1QjcKec8n"><img src="imagenes/tel.png" alt="logo" class="contacto"> <h3>Informaciones Telecomunicaciones</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/IzQ1D2beVWBIfghQKOaSdM"><img src="imagenes/tis.png" alt="logo" class="contacto"> <h3>Informaciones Tecnologias de la Informacion y Seguridad</h3></a>
+                <a class="link"  class="link" href="https://t.me/+8ALKrFr_3S1iZjMx"><img src="imagenes/telegram.png" alt="logo" class="contacto"> <h3>C.E. CHAT GPT plus</h3></a>
             </div>
-            <div>
-                <a class="link" class="link" href="https://chat.whatsapp.com/Kb0zlKFseBTHgLqfxS9xjo"><img src="imagenes/cic.png" alt="logo" class="contacto"> <h3>Informaciones Ciencias de la Computación</h3></a>
-                <a class="link" class="link" href="https://chat.whatsapp.com/IqXPsIHvFmAAAmPMa7QWIB"><img src="imagenes/1.png" alt="logo" class="contacto"> <h3>C.E. CHAT GPT</h3></a>
-                <a class="link" class="link" href="https://chat.whatsapp.com/KyYCGDZ72991M6hlHJHgrg"><img src="imagenes/2.png" alt="logo" class="contacto"> <h3>C.E. CHAT GPT PLUS</h3></a>
-                <a class="link" class="link" href="https://chat.whatsapp.com/BfKYex2pOqgEPGGhznrDUX"><img src="imagenes/3.png" alt="logo" class="contacto"> <h3>C.E. CHAT GPT 4o (Nuevos 1/25)</h3></a>
+            <div class="colums2">
+                <a class="link" href="https://chat.whatsapp.com/Kb0zlKFseBTHgLqfxS9xjo"><img src="imagenes/cic.png" alt="logo" class="contacto"> <h3>Informaciones Ciencias de la Computación</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/IqXPsIHvFmAAAmPMa7QWIB"><img src="imagenes/1.png" alt="logo" class="contacto"> <h3>C.E. CHAT GPT</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/KyYCGDZ72991M6hlHJHgrg"><img src="imagenes/2.png" alt="logo" class="contacto"> <h3>C.E. CHAT GPT PLUS</h3></a>
+                <a class="link" href="https://chat.whatsapp.com/BfKYex2pOqgEPGGhznrDUX"><img src="imagenes/3.png" alt="logo" class="contacto"> <h3>C.E. CHAT GPT 4o (Nuevos 1/26)</h3></a>
+                <a class="link"  class="link" href="https://discord.gg/W4hXAvDVNK "><img src="imagenes/discord.png" alt="logo" class="contacto"> <h3>Canal de Discord</h3></a>
+            </div>
+            <div id="telegram">
+                <a class="link"  class="link" href="https://whatsapp.com/channel/0029VbB5ufx60eBXzdiC9U0d"><img src="imagenes/canal.png" alt="logo" class="contacto"> <h3>Canal de whatsapp</h3></a>
             </div>
         </div>
-        
-       
-        
+
+        <div class="Plans">
+            <h2>- PLANES DE ESTUDIOS -</h2>
+            <div class="planes">
+                 <a href="https://si.usfx.bo/planestudio/ctrl/index.php?id=0&pag=123&ex=yes&op=pln&idc=35&idp=9&idf=TE"><img src="imagenes/sis.png" alt="Sistemas" class="contacto"></a>
+            <a href="https://si.usfx.bo/planestudio/ctrl/index.php?id=0&pag=123&ex=yes&op=pln&idc=56&idp=4&idf=TE"><img src="imagenes/tel.png" alt="Teleco" class="contacto"></a>
+            <a href="https://si.usfx.bo/planestudio/ctrl/index.php?id=0&pag=123&ex=yes&op=pln&idc=104&idp=1&idf=TE"><img src="imagenes/dad.png" alt="Diseño" class="contacto"></a>
+            <a href="https://si.usfx.bo/planestudio/ctrl/index.php?id=0&pag=123&ex=yes&op=pln&idc=111&idp=1&idf=TE"><img src="imagenes/cic.png" alt="Ciencias"class="contacto" ></a>
+            <a href="https://si.usfx.bo/planestudio/ctrl/index.php?id=0&pag=123&ex=yes&op=pln&idc=112&idp=1&idf=TE"><img src="imagenes/tis.png" alt="Tecnologias" class="contacto"></a>
+            </div> 
+        </div>
+
         <div class="social-icons">
             <h2>Síguenos en redes sociales</h2>
             <a href="https://www.facebook.com/profile.php?id=100094430410757&locale=es_LA"><img src="imagenes/facebook.png" alt="Facebook"></a>
             <a href="https://www.tiktok.com/@ce_chat_gpt_usfx"><img src="imagenes/tik-tok.png" alt="TikTok"></a>
         </div>
-        
+
         <a class="contact-btn" href="contactos.html"><img src="imagenes/social.png" alt="Facebook" style="width: 50px; height: 50px;"> <h3>Contactar a Integrantes</h3></a>
     </div>
+    <div class="footer">
+        <div class="footer-content">
+            <h2 style="color:white">Centro de Estudiantes CHAT GPT</h2>
+            <p><strong>Dirección:</strong> Facultad de Ciencias y Tecnología, Universidad San Francisco Xavier de Chuquisaca</p>
+            <p><strong>Ambiente:</strong> F-105</p>
+            <p><strong>Horario de Atención:</strong> Lunes a Viernes</p>
+            Turno Mañana: 08:00 AM a 12:00 PM  |  Turno Tarde: 02:00 PM a 06:00 PM  
+            <p><strong>Correo Electrónico:</strong> <a href="mailto:centrodeestudianteschatgpt@gmail.com">centrodeestudianteschatgpt@gmail.com</a></p>
+            <p><strong>Celular:</strong> <a href="cel:+59171154436">+591 71154436</a></p>
+        </div>
+    </div>
+
 </body>
+
+
 </html>
+

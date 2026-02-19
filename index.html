@@ -6,199 +6,453 @@
     <title>C.E. Chat GPT</title>
     <link rel="shortcut icon" href="imagenes/Logo-Circular.ico">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #E5E5E5;
-            color: #004AAD;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
 
-        .logo{
-            width: 250px;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
+/* ===================== ESTILO GENERAL ===================== */
 
-        .descripcion{
-            padding-left: 100px;
-            padding-right: 100px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E5E5E5;
+    color: #004AAD;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
 
-        .container {
-            max-width: 1400px;
-            margin: auto;
-            background: #FFFFFF;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3 {
-            color: #004AAD;
-        }
-        .link {
-            display: flex;
-            background: #00A3FF;
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            gap: 20px;
-            text-align: left;
-            align-items: center;
-        }
-        .link:hover {
-            background: #FFD700;
-            color: #004AAD;
-        }
-        .social-icons img {
-            width: 60px;
-            margin: 15px;
-        }
-        .contact-btn {
-            display: flex;
-            background: #FFD700;
-            color: #004AAD;
-            padding: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 20px;
-            gap: 20px;
-            justify-content: center;
-        }
-        .contact-btn:hover {
-            background: #00A3FF;
-            color: white;
-        }
+.logo{
+    width:250px;
+    margin:20px;
+}
 
-        .contacto {
-            width: 50px;
-            height: 50px;
-        }
+.descripcion{
+    padding-left:100px;
+    padding-right:100px;
+}
 
-        .columns {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .columns div {
-            flex: 1 1 45%; /* Hace que cada columna ocupe un 45% del ancho */
-            margin: 10px;
-        }
+.container{
+    max-width:1400px;
+    margin:auto;
+    background:#FFFFFF;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
 
-        .footer {
-            background-color: #004AAD;
-            color: white;
-            padding: 20px;
-            margin-top: 30px;
-            border-radius: 10px;
-        }
-        .footer .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .footer .footer-content h2 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-        .footer .footer-content p {
-            font-size: 1rem;
-            margin-bottom: 5px;
-        }
-        .footer .footer-content a {
-            color: #FFD700;
-            text-decoration: none;
-            font-size: 1rem;
-        }
-        .footer .footer-content a:hover {
-            color: #FFFFFF;
-        }
+h1,h2,h3{
+    color:#004AAD;
+}
 
-        #telegram{
-            text-align: center;
-            align-items: center;
-        }
-        
+/* ===================== LINKS ===================== */
 
-        /* Responsividad */
-        @media (max-width: 400px) {
-        body {
-            padding: 10px;
-        }
+.link{
+    display:flex;
+    background:#00A3FF;
+    color:white;
+    text-decoration:none;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    gap:20px;
+    align-items:center;
+}
 
-        .logo {
-            width: 180px;
-        }
+.link:hover{
+    background:#FFD700;
+    color:#004AAD;
+}
 
-        .descripcion {
-            font-size: 15px;
-            padding-left: 10px;
-            padding-right: 10px;
+.contacto{
+    width:50px;
+    height:50px;
+}
 
-        }
+.columns{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
 
-        h1 {
-            font-size: 20px;
-        }
+.columns div{
+    flex:1 1 45%;
+    margin:10px;
+}
 
-        h2 {
-            font-size: 18px;
-        }
+/* ===================== PLANES ===================== */
 
-        h3 {
-            font-size: 16px;
-        }
+.planes img{
+    width:80px;
+    height: 80px;
+    margin:10px;
+}
 
-        .link{
-            display: flex;
-            gap:5px
-        }
+/* ===================== REDES ===================== */
 
-        .container {
-            padding: 10px;
-        }
+.social-icons img{
+    width:60px;
+    margin:15px;
+}
 
-        .link {
-            flex-direction: column;
-            text-align: center;
-        }
+/* ===================== BOTON CONTACTO ===================== */
 
-        .columns {
-            align-items: center;
-            margin-left: 0;
-            margin-right: 0;
-        }
+.contact-btn{
+    display:flex;
+    background:#FFD700;
+    color:#004AAD;
+    padding:10px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;
+    margin-top:20px;
+    gap:20px;
+    justify-content:center;
+}
 
-        .social-icons img {
-            width: 35px;
-            margin: 10px;
-        }
+.whatsapp{
+    width: 50px;
+    height: 50px;
+}
 
-        .contact-btn {
-            text-align: center;
-            margin: 10px auto;
-            padding: 8px;
-        }
+.contact-btn:hover{
+    background:#00A3FF;
+    color:white;
+}
 
-        .footer {
-                padding: 15px;
-            }
-            .footer .footer-content h2 {
-                font-size: 1.3rem;
-            }
-            .footer .footer-content p {
-                font-size: 0.85rem;
-        }
-        
-        
+/* ===================== FORMULARIO ===================== */
+
+.quejas-section{
+    margin-top:50px;
+    padding:30px;
+    background:#f9fbff;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.quejas-form{
+    max-width:500px;
+    margin:20px auto;
+    text-align:left;
+}
+
+.quejas-form label{
+    font-weight:bold;
+    display:block;
+    margin-top:15px;
+}
+
+.quejas-form input,
+.quejas-form select,
+.quejas-form textarea{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.quejas-form input:focus,
+.quejas-form select:focus,
+.quejas-form textarea:focus{
+    border-color:#00A3FF;
+    outline:none;
+    box-shadow:0 0 5px rgba(0,163,255,0.3);
+}
+
+.quejas-form textarea{
+    resize:none;
+    height:100px;
+}
+
+.quejas-form button{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    background:#004AAD;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.quejas-form button:hover{
+    background:#FFD700;
+    color:#004AAD;
+}
+
+/* ===================== FOOTER ===================== */
+
+.footer{
+    background-color:#004AAD;
+    color:white;
+    padding:20px;
+    margin-top:30px;
+    border-radius:10px;
+}
+
+.footer a{
+    color:#FFD700;
+    text-decoration:none;
+}
+
+/* ===================== MODAL ===================== */
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index:999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.6);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    max-width:400px;
+}
+
+.modal-content button{
+    margin-top:20px;
+    background:#00A3FF;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.modal-content button:hover{
+    background:#FFD700;
+    color:#004AAD;
+}
+
+/* ===================== RESPONSIVE CELULAR ===================== */
+
+/* ===================== RESPONSIVE COMPLETO ===================== */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    /* ================= LOGO ================= */
+
+    .logo {
+        width: 160px;
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    /* ================= TEXTOS ================= */
+
+    .descripcion {
+        padding: 0 10px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* ================= COLUMNAS ================= */
+
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .columns div {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* ================= LINKS ================= */
+
+    .link {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .contacto {
+        width: 40px;
+        height: 40px;
+        max-width: 100%;
+    }
+
+    /* ================= PLANES ================= */
+
+    .planes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .planes img {
+        width: 45px;
+        height: auto;
+        margin: 6px;
+        max-width: 100%;
+    }
+
+    /* ================= REDES ================= */
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-icons img {
+        width: 40px;
+        height: auto;
+        margin: 8px;
+        max-width: 100%;
+    }
+
+    /* ================= BOTON CONTACTO ================= */
+
+    .contact-btn {
+        display: grid;
+        gap: 6px;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .contact-btn img {
+        width: 35px;
+        height: auto;
+    }
+
+    /* ================= FORMULARIO ================= */
+
+    .quejas-section {
+        padding: 20px 15px;
+    }
+
+    .quejas-form {
+        width: 100%;
+    }
+
+    .quejas-form input,
+    .quejas-form select,
+    .quejas-form textarea {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .quejas-form button {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    /* ================= MODAL ================= */
+
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        padding: 15px;
+        font-size: 13px;
+    }
+
+    .footer p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .footer h2 {
+        font-size: 16px;
+    }
+
+}
+
+/* ================= EXTRA PEQUEÑOS (CELULARES MUY CHICOS) ================= */
+
+@media (max-width: 400px) {
+
+    .logo {
+        width: 130px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .whatsapp{
+        width: 30px;
+        height: 30px;
 
     }
 
-    </style>
+    .contact-btn{
+        align-items: center;
+        display:block;
+    }
+
+    .planes img,
+    .social-icons img {
+        width: 35px;
+    }
+
+    .quejas-form button {
+        font-size: 14px;
+    }
+
+    img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+}
+
+
+
+</style>
 </head>
 <body>
     <div class="container">
@@ -242,8 +496,54 @@
             <a href="https://www.tiktok.com/@ce_chat_gpt_usfx"><img src="imagenes/tik-tok.png" alt="TikTok"></a>
         </div>
 
-        <a class="contact-btn" href="contactos.html"><img src="imagenes/social.png" alt="Facebook" style="width: 50px; height: 50px;"> <h3>Contactar a Integrantes</h3></a>
+        <div class="Plans">
+            <h2>- HORARIOS 1/26 -</h2>
+            <div class="planes">
+                 <a href="https://docs.google.com/spreadsheets/d/1T4ybdpKYDZPRcniKiUS4KrI6Z4nMAC4y/edit?usp=sharing&ouid=109842985638913945537&rtpof=true&sd=true"><img src="imagenes/sis.png" alt="Sistemas" class="contacto"></a>
+            <a href="https://docs.google.com/spreadsheets/d/17-ZQBIwR-dO_94kOmK6kHghayh7_FH_E/edit?usp=sharing&ouid=109842985638913945537&rtpof=true&sd=true"><img src="imagenes/tel.png" alt="Teleco" class="contacto"></a>
+            <a href="https://docs.google.com/spreadsheets/d/1lhi_WCpYAlvO1gf6hAH4U56YmsC_eUtN/edit?usp=sharing&ouid=109842985638913945537&rtpof=true&sd=true"><img src="imagenes/dad.png" alt="Diseño" class="contacto"></a>
+            <a href="https://docs.google.com/spreadsheets/d/1vUQnqhAXNiBMoaj8rLQ5ozDoERjRwN_x/edit?usp=sharing&ouid=109842985638913945537&rtpof=true&sd=true"><img src="imagenes/cic.png" alt="Ciencias"class="contacto" ></a>
+            <a href="https://docs.google.com/spreadsheets/d/12nrDStZz4EVHyubwQFH68ta6pxiXaNjo/edit?usp=sharing&ouid=109842985638913945537&rtpof=true&sd=true"><img src="imagenes/tis.png" alt="Tecnologias" class="contacto"></a>
+            </div> 
+        </div>
+
+        <a class="contact-btn" href="contactos.html"><img class="whatsapp" src="imagenes/social.png" alt="Facebook" > <h3>Contactar a Integrantes</h3></a>
     </div>
+    
+            <!-- FORMULARIO DE QUEJAS -->
+       <div class="quejas-section">
+    <h2>📩 Formulario de Quejas</h2>
+    <p>Completa el formulario y nos comunicaremos contigo.</p>
+
+    <form class="quejas-form" id="quejasForm">
+
+        <label>Nombre Completo</label>
+        <input type="text" id="nombre" required>
+
+        <label>Celular (WhatsApp)</label>
+        <input type="tel" id="celular" placeholder="Ej: 71123456" required>
+
+        <label>Carrera</label>
+        <select id="carrera" required>
+            <option value="">Seleccione su carrera</option>
+            <option>Sistemas</option>
+            <option>Telecomunicaciones</option>
+            <option>Diseño y Animación Digital</option>
+            <option>Ciencias de la Computación</option>
+            <option>Tecnologías de la Información y Seguridad</option>
+        </select>
+
+        <label>Detalles de la Queja</label>
+        <textarea id="mensaje" required></textarea>
+
+        <button type="submit">Enviar Queja</button>
+
+    </form>
+</div>
+
+
+    </div> <!-- CIERRE CORRECTO DE .container -->
+
     <div class="footer">
         <div class="footer-content">
             <h2 style="color:white">Centro de Estudiantes CHAT GPT</h2>
@@ -251,13 +551,68 @@
             <p><strong>Ambiente:</strong> F-105</p>
             <p><strong>Horario de Atención:</strong> Lunes a Viernes</p>
             Turno Mañana: 08:00 AM a 12:00 PM  |  Turno Tarde: 02:00 PM a 06:00 PM  
-            <p><strong>Correo Electrónico:</strong> <a href="mailto:centrodeestudianteschatgpt@gmail.com">centrodeestudianteschatgpt@gmail.com</a></p>
-            <p><strong>Celular:</strong> <a href="cel:+59171154436">+591 71154436</a></p>
+            <p><strong>Correo Electrónico:</strong> 
+                <a href="mailto:centrodeestudianteschatgpt@gmail.com">
+                    centrodeestudianteschatgpt@gmail.com
+                </a>
+            </p>
+            <p><strong>Celular:</strong> 
+                <a href="tel:+59171154436">+591 71154436</a>
+            </p>
         </div>
     </div>
 
+    <!-- SCRIPT CONECTADO A MAKE -->
+    <script>
+document.getElementById("quejasForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const data = {
+        nombre: document.getElementById("nombre").value,
+        celular: document.getElementById("celular").value,
+        carrera: document.getElementById("carrera").value,
+        mensaje: document.getElementById("mensaje").value,
+        fecha: new Date().toLocaleString()
+    };
+
+    try {
+        const response = await fetch("https://hook.us2.make.com/1prtvx8xzyhz6lbehou6wez2wkn148cd", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            document.getElementById("quejasForm").reset();
+            document.getElementById("modalGracias").style.display = "flex";
+        } else {
+            alert("Error al enviar la queja.");
+        }
+
+    } catch (error) {
+        alert("Error de conexión.");
+    }
+});
+
+function cerrarModal() {
+    document.getElementById("modalGracias").style.display = "none";
+}
+</script>
+
+
+    <!-- POPUP -->
+    <div class="modal" id="modalGracias">
+        <div class="modal-content">
+            <h3>✅ Gracias por usar nuestro sistema</h3>
+            <p>Te responderemos a tu WhatsApp próximamente.</p>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+
 </body>
-
-
 </html>
+
 
